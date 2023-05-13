@@ -57,13 +57,13 @@ def draw():
     if mark is not None and hide[mark]:
         x, y = xy(mark)
         up()
-        # Calculate the center of the square
+        # Calcula el centro del cuadrado
         x += 25
         y += 25
-        # Move the pen to the center of the square
+        # Mueve la letra al centro de cada cuadrado
         goto(x, y - 12)  # Adjust the y-coordinate by subtracting 5
         color('black')
-        # Write the tile number
+        # Escribe el número de fila en el código para el análisis
         write(tiles[mark], align='center', font=('Arial', 30, 'normal'))
 
     update()
